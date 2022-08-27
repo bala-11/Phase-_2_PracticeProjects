@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17 Aug, 2022 3:16:47 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.Productdetails" table="productdetails" catalog="product" optimistic-lock="version">
+        <id name="pid" type="int">
+            <column name="pid" />
+            <generator class="assigned" />
+        </id>
+        <property name="pname" type="string">
+            <column name="pName" length="10" />
+        </property>
+        <property name="pprice" type="java.lang.Double">
+            <column name="pPrice" precision="22" scale="0" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="quantity" />
+        </property>
+    </class>
+</hibernate-mapping>
